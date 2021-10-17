@@ -13,6 +13,7 @@
 		B2654015271A5622009B5589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2654013271A5622009B5589 /* Main.storyboard */; };
 		B2654017271A5624009B5589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2654016271A5624009B5589 /* Assets.xcassets */; };
 		B265401A271A5624009B5589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2654018271A5624009B5589 /* LaunchScreen.storyboard */; };
+		E52C4653271C64EC006BFC46 /* PrefecturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52C4652271C64EC006BFC46 /* PrefecturesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B2654016271A5624009B5589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2654019271A5624009B5589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B265401B271A5624009B5589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E52C4652271C64EC006BFC46 /* PrefecturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefecturesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				B265400D271A5622009B5589 /* AppDelegate.swift */,
 				B265400F271A5622009B5589 /* SceneDelegate.swift */,
 				B2654011271A5622009B5589 /* ViewController.swift */,
+				E52C4652271C64EC006BFC46 /* PrefecturesViewController.swift */,
 				B2654013271A5622009B5589 /* Main.storyboard */,
 				B2654016271A5624009B5589 /* Assets.xcassets */,
 				B2654018271A5624009B5589 /* LaunchScreen.storyboard */,
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2654012271A5622009B5589 /* ViewController.swift in Sources */,
+				E52C4653271C64EC006BFC46 /* PrefecturesViewController.swift in Sources */,
 				B265400E271A5622009B5589 /* AppDelegate.swift in Sources */,
 				B2654010271A5622009B5589 /* SceneDelegate.swift in Sources */,
 			);
