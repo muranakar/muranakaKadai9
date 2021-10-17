@@ -10,22 +10,11 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak private var prefectureLabel: UILabel!
 
+    @IBAction private func exitBySelecting(segue: UIStoryboardSegue) {
+        guard let prefecturesViewController = segue.source as? PrefecturesViewController else { return }
+        prefectureLabel.text = prefecturesViewController.selectedPrefecture
+    }
+
     @IBAction private func exit(segue: UIStoryboardSegue) {
-    }
-
-    @IBAction private func tokyoselect(segue: UIStoryboardSegue) {
-        prefectureLabel.text = "東京都"
-    }
-
-    @IBAction private func kanagawaselect(segue: UIStoryboardSegue) {
-        prefectureLabel.text = "神奈川県"
-    }
-
-    @IBAction private func saitamaselect(segue: UIStoryboardSegue) {
-        prefectureLabel.text = "埼玉県"
-    }
-
-    @IBAction private func chibaselect(segue: UIStoryboardSegue) {
-        prefectureLabel.text = "千葉県"
     }
 }

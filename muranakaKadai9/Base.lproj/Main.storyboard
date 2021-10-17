@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </scene>
-        <!--Prefectures Selection View Controller-->
+        <!--Prefectures View Controller-->
         <scene sceneID="UVa-rA-Fpr">
             <objects>
-                <viewController id="vKy-sE-STq" customClass="PrefecturesSelectionViewController" customModule="muranakaKadai9" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vKy-sE-STq" customClass="PrefecturesViewController" customModule="muranakaKadai9" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BDE-Ff-1xl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,7 +65,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="東京都"/>
                                 <connections>
-                                    <segue destination="UCO-Bw-M69" kind="unwind" unwindAction="tokyoselectWithSegue:" id="Nfd-lU-cpE"/>
+                                    <action selector="didTapTokyo:" destination="vKy-sE-STq" eventType="touchUpInside" id="64t-Ld-YbO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvC-wZ-ean">
@@ -74,7 +74,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="神奈川県"/>
                                 <connections>
-                                    <segue destination="UCO-Bw-M69" kind="unwind" unwindAction="kanagawaselectWithSegue:" id="kkk-nK-Ne6"/>
+                                    <action selector="didTapKanagawa:" destination="vKy-sE-STq" eventType="touchUpInside" id="ftM-Pz-xWq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMS-qD-kmP">
@@ -83,7 +83,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="埼玉県"/>
                                 <connections>
-                                    <segue destination="UCO-Bw-M69" kind="unwind" unwindAction="saitamaselectWithSegue:" id="vwx-El-UWf"/>
+                                    <action selector="didTapSaitama:" destination="vKy-sE-STq" eventType="touchUpInside" id="mDb-WD-9Vv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mj9-yT-JGU">
@@ -92,7 +92,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="千葉県"/>
                                 <connections>
-                                    <segue destination="UCO-Bw-M69" kind="unwind" unwindAction="chibaselectWithSegue:" id="3fl-EU-OtT"/>
+                                    <action selector="didTapChiba:" destination="vKy-sE-STq" eventType="touchUpInside" id="iWS-zT-UOa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -106,6 +106,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="UCO-Bw-M69" kind="unwind" identifier="exitBySelecting" unwindAction="exitBySelectingWithSegue:" id="dAW-Ef-YbP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rDK-Yi-yjj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="UCO-Bw-M69" userLabel="Exit" sceneMemberID="exit"/>
